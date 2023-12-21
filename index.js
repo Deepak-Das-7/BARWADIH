@@ -19,6 +19,6 @@ app.use('/',test);
 app.use('/admin/',adminRout);
 app.use('/admin/page/',page);
 
-app.listen(200 , ()=>{
-    console.log(`200 port working`);
+app.listen(process.env.PORT , ()=>{
+    console.log(`${process.env.PORT} port working`);
 });

@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <%- include('common/head.ejs', { title: 'Admin' }) %>
+    <%- include('common/head.ejs', { title: 'BARWADIH' }) %>
 </head>
 
 <body>
     <header>
-        <h1>Complex Dashboard</h1>
+        <%- include('common/header.ejs', { heading: 'BARWADIH' }) %>
     </header>
     <%-include('common/navbar.ejs')-%>
-    <%-include('common/body.ejs')-%>
+    <%-include('common/body.ejs', { src: '/photo/d1.png' })-%>
 </body>
 <footer>
     <%-include('common/footer.ejs')-%>

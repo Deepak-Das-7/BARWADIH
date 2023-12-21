@@ -5,10 +5,19 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: rgb(158, 0, 0);
     color: white;
     text-align: center;
     padding: 1px;
+    .heading{
+        display: block;
+        font-size: 40px;
+        margin-block-start: 15px;
+        margin-block-end: 15px;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+    }
 }
 
 nav {
@@ -48,6 +57,7 @@ nav a.active {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -55,7 +65,10 @@ nav a.active {
     border: 1px solid #ddd;
     padding: 20px;
     margin: 0 10px;
-    flex: 1;
+    .photoContainer{
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .charts {
